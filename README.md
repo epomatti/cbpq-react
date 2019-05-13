@@ -9,6 +9,8 @@ NOTE: This application is under development.
 1. `npm install`
 2. `npm start`
 
+You need to start [cbpq-firebase](https://github.com/epomatti/cbpq-firebase) locally.
+
 ## New React app
 
 Steps to create a new React application (for future reference)
