@@ -1,8 +1,6 @@
-# CBPQ React (In Development)
+# CBPQ React
 
 Web front-end for the CBPQ service.
-
-NOTE: This application is under development.
 
 ## Run it
 
