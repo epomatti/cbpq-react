@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button, Form, FormGroup, Label, Input } from 'reactstrap'
+import { Button, Form, FormGroup, Input } from 'reactstrap'
 
 class LicenseForm extends React.Component {
   state = {
@@ -23,7 +23,6 @@ class LicenseForm extends React.Component {
     return (
       <Form>
         <FormGroup>
-          <Label for="documentType">Documento</Label>
           <Input
             type="select"
             name="documentType"
@@ -35,15 +34,17 @@ class LicenseForm extends React.Component {
           </Input>
         </FormGroup>
         <FormGroup>
-          <Label for={document}></Label>
           <Input
             type="text"
             name={document}
             id={document}
             value={document === 'cbpq' ? cbpq : cpf}
-            onChange={e => this.handleInputChange(e)} />
+            onChange={e => this.handleInputChange(e)}
+            placeholder={document === 'cbpq' ? 'Digite a CBPQ' : 'Digite o CPF'} />
         </FormGroup>
-        <Button onClick={() => this.handleSubmit()}>Consultar</Button>
+        <Button
+          style={{ width: '100%' }}
+          onClick={() => this.handleSubmit()}>Consultar</Button>
       </Form>
     )
   }
