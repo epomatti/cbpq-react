@@ -2,6 +2,8 @@
 
 Web front-end for the CBPQ service.
 
+<img src="./docs/cbpq.png"/>
+
 ## Run it
 
 1. `npm install`
